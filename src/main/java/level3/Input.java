@@ -7,8 +7,8 @@ import java.io.InputStreamReader;
 public class Input {
     public static void main(String[] args) {
 
-        try {
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        try(BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in))) {
+            //BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("Введите имя: ");
             String name = bufferedReader.readLine();
             System.out.println("Введите первое число: ");
@@ -17,8 +17,7 @@ public class Input {
             String number2 = bufferedReader.readLine();
             int n1 = Integer.parseInt(number1); //преобразуем в целое число
             int n2 = Integer.parseInt(number2);
-
-
+            //bufferedReader.close();
             System.out.println(name + " получает " + number1 + " через " + number2 + " лет.");
         } catch (IOException e) {
             System.out.println("Ошибка ввода");
