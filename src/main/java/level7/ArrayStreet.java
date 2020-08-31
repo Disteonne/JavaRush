@@ -18,6 +18,7 @@ public class ArrayStreet {
                     sum2 += street[i];
                 } else
                     sum1 = +street[i];
+                bufferedReader.close();
             }
                 if (sum1 > sum2) {
                     System.out.println("В нечетных домах жителей больше");

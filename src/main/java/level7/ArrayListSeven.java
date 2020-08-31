@@ -23,7 +23,9 @@ public class ArrayListSeven {
                 list2.add(n);
             if ((n % 2 !=0) && (n % 3 != 0))
                 list1.add(n);
+            bufferedReader.close();
         }
+
         for (int i = 0; i < list1.size(); i++) {
             System.out.print(list1.get(i) + "\t");
             System.out.println("!(На 2 и на 3)");

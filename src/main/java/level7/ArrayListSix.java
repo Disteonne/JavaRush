@@ -28,6 +28,7 @@ public class ArrayListSix {
             }
             System.out.println(min);
             System.out.println(max);
+            bufferedReader.close();
 
         }catch (IOException ex){
             System.out.println("error");

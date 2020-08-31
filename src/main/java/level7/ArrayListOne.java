@@ -12,7 +12,9 @@ public class ArrayListOne {
             for (int i = 0; i < 5; i++) {
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
                 arrayList.add(bufferedReader.readLine());
+                //bufferedReader.close();
             }
+
             for (int i = 0; i < 5; i++) {
             System.out.println(arrayList.get(i));
             }

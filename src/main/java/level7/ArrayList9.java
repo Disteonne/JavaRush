@@ -20,6 +20,7 @@ public class ArrayList9 {
             else
                 ;
         }
+        bufferedReader.close();
     }
 }
 class Test9{

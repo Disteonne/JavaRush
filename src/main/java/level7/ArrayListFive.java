@@ -25,6 +25,7 @@ public class ArrayListFive {
             for (int j = 0; j < list.size(); j++) {
                 System.out.println(list.get(j));
             }
+            bufferedReader.close();
         }catch (IOException ex){
             System.out.println("error");
         }

@@ -12,6 +12,7 @@ public class Array {
             for(int i=0;i<10;i++){
                 BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(System.in));
                 str[i]= bufferedReader.readLine();
+                bufferedReader.close();
             }
             for (int i = 0; i < 10; i++) {
                 length1[i]=str[i].length();

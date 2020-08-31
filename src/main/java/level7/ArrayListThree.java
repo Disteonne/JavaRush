@@ -23,6 +23,7 @@ public class ArrayListThree {
                     str1 = str.get(i + 1);
                 }
             }
+            bufferedReader.close();
             System.out.println(str1);
         } catch (IOException e) {
             e.getStackTrace();

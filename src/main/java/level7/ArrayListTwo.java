@@ -17,6 +17,7 @@ public class ArrayListTwo {
             for (int i = 0; i < 5; i++) {
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
                 max.add(bufferedReader.readLine());
+                bufferedReader.close();
             }
             str1=max.get(0);
             for (int i = 0; i < 5 - 1; i++) {
