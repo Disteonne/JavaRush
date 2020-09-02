@@ -8,13 +8,14 @@ import java.util.Locale;
 
 public class Solution7 {
     public static void main(String[] args) throws  ParseException{
-        String date="FEBRUARY 1 2013";
+        String date="FEBRUARY 2 2013";
         System.out.println(isDateOdd(date));
 
     }
     public static boolean isDateOdd(String date) throws ParseException {
-        DateFormat dateFormat=new SimpleDateFormat("MMMM D YYYY", Locale.ENGLISH);
+        DateFormat dateFormat=new SimpleDateFormat("MMMM d yyyy", Locale.ENGLISH);
         Date d= dateFormat.parse(date);
+        System.out.println(d);
         if(d.getDay()%2==0){
             return true;
         }
