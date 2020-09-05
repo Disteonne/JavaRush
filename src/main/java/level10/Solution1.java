@@ -1,6 +1,11 @@
 package level10;
 
-import level7.Array;
+/*
+*
+*               СМОТРИ LEVEL10-> SOLUTION2
+*
+ */
+
 
 import java.io.BufferedReader;
 import java.io.IOException;
